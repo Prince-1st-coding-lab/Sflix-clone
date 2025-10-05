@@ -1,0 +1,176 @@
+@import url("variables.css");
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(43, 39, 39);
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* header section */
+.header{
+    position: relative;
+    width: 100%;
+    height: 3.5rem;
+    background-color:rgb(66, 66, 83);
+    display: flex;
+    flex-direction: column;
+}
+.header img{
+    margin-left: .5rem;
+    margin-top: .5rem;
+}
+.header button{
+    position: absolute;
+    width: 6%;
+    margin-left: 6rem;
+    padding: .4rem;
+    margin-top: .8rem;
+    font-weight: bold;
+    background-color: rgb(105, 105, 126);
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+
+}
+.search{
+    position: absolute;
+    width: 50%;
+    margin-left: 13%;
+    margin-top: .7rem;
+    height: 2rem;
+    background-color: white;
+    align-content: center;
+    border-radius: 5px;
+}
+.search input{
+    width: 95%;
+    height: 100%;
+    font-size: 14px;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    color: rgb(0, 0, 0);
+}
+.search i{
+    margin-left: 4px;
+}
+/* featured movies and slider */
+.featured{
+    position: relative;
+    width: 100%;
+    height: 32rem;
+    background-color: chocolate;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+
+}
+.featured .prev , .next{
+    position: absolute;
+    z-index: 1;
+    color: white;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    transition: background .2s ease;
+  
+}
+.featured .prev:hover , .next:hover{
+    background-color: rgba(66, 66, 83 , 0.6);
+}
+.prev{
+    top: 12rem;
+    font-size: 2.5rem;
+}
+.next{
+    top: 12rem;
+    left: 56.3%;
+    font-size: 2.5rem;
+}
+/* slider contaier */
+.slider-container{
+    position: relative;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    z-index: 0;
+
+}
+.section{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    overflow: visible;
+}
+.slide{
+    display: none;
+    animation: fade 1.5s;
+}
+@keyframes fade {
+    from {opacity: .4;}
+    to {opacity: 1;}
+}
+.slider-container::after{
+    position: relative;
+    content: "";
+    height: 60%;
+    width: 100%;
+    background: linear-gradient(to top ,rgb(66, 66, 83),rgba(66, 66, 83,0.9),transparent);
+    top: 13.4rem;
+}
+
+
+
+.slider-container section img{
+    width: 100%;
+}
+
+/* featured container */
+.featured-container{
+    position: relative;
+    top: 0;
+    width: 40%;
+    height: 99%;
+    /* background-color: blue; */
+    border: solid 3px blue;
+
+}
+
+/* trending movies */
+.trending-container{
+    position: relative;
+    width: 100%;.slider-container section{
+        width: 100%;
+    }
+    height: 50rem;
+    background-color: brown;
+}
+/* latest cotainer */
+.latest-movies-container{
+    position: relative;
+    width: 100%;
+    height: 50rem;
+    background-color: rgb(76, 77, 48);
+}
+/*  latest tv shows */
+.latest-tv-shows{
+    position: relative;
+    width: 100%;
+    height: 50rem;
+    background-color: rgb(74, 25, 129);
+}
+/* coming soon  */
+.coming-soon{
+    position: relative;
+    width: 100%;
+    height: 50rem;
+    background-color: rgb(255, 255, 255);
+}

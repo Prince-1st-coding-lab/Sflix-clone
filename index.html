@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- header section -->
+    <div class="header">
+        <img src="assets/logo.png" alt="logo" width="60" height="40">
+        <button><i class="fa-solid fa-bars"></i> Browse</button>
+        <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" name="search" id="search" placeholder="enter keywords">
+        </div>
+
+    </div>
+
+    <!-- featured section -->
+    <div class="featured">
+            <button class="prev" onclick=""><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="next" onclick="NextSlide(slideIndex)"><i class="fa-solid fa-chevron-right"></i></button>
+        <div class="slider-container">
+
+            <section class="section">
+                <span class="slide" id="slide">
+                    <img src="assets/img1.jpg" alt="slide1">
+                </span>
+
+                <span class="slide" id="slide">
+                    <img src="assets/img2.jpg" alt="slide2">
+                </span>
+
+                <span class="slide" id="slide">
+                    <img src="assets/img3.jpg" alt="slide3">
+                </span>
+
+                <span class="slide" id="slide">
+                    <img src="assets/img4.jpg" alt="slide4">
+                </span>
+
+                <span class="slide" id="slide">
+                    <img src="assets/img5.jpg" alt="slide5">
+                </span>
+                <span class="slide" id="slide">
+                    <img src="assets/img1.jpg" alt="slide5">
+                </span>
+            </section>
+        </div>
+        <div class="featured-container"></div>
+        
+    </div>
+
+    <!-- trending movies -->
+    <div class="trending-container"></div>
+
+    <!-- latest movies -->
+     <div class="latest-movies-container"></div>
+
+     <!-- latest TV Shows -->
+      <div class="latest-tv-shows"></div>
+
+      <!-- coming soon -->
+       <div class="coming-soon"></div>
+
+       <script src="index.js"></script>
+</body>
+</html>
