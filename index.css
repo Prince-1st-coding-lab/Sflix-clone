@@ -1,4 +1,4 @@
-@import url("variables.css");
+
 *{
     margin: 0;
     padding: 0;
@@ -110,6 +110,71 @@ body{
     z-index: 0;
     overflow: visible;
 }
+.caption{
+    position: absolute;    
+    background: linear-gradient(to top ,rgb(66, 66, 83),rgba(66, 66, 83,0.9),transparent);
+    height: 21rem;
+    width: 100%;
+    top: 35%;
+    z-index: 1;
+}
+.caption img{
+    position: relative;
+    left: 2rem;
+    top: 6rem;
+}
+.slide button{
+    position: relative;
+    z-index: 1;
+    left: 3rem;
+    top: -3rem;
+    font-size: 2rem;
+    color: rgb(38, 194, 194);
+    background: transparent;
+    padding: 1vh;
+    border: solid 3px rgb(38, 194, 194);
+    border-radius: 50%;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    cursor: pointer;
+
+}
+.slide h1{
+    position: relative;
+    color: white;
+    left: 17rem;
+    top: -7rem;
+    font-size: 2rem;
+
+}
+.slide p{
+    position: relative;
+    left: 17rem;
+    top: -5rem;
+    width: 35rem;
+    font-size: 1.6vh;
+    color: rgb(216, 199, 199);
+    text-transform: capitalize;
+}
+.slide h2{
+    position: relative;
+    left: 17rem;
+    top: -6rem;
+    width: 35rem;
+    font-size: 2vh;
+    color: rgb(38, 194, 194);
+    text-transform: capitalize;
+}
+.slide h3{
+    position: relative;
+    left: 21rem;
+    top: -7.2rem;
+    width: 35rem;
+    font-size: 2vh;
+    color: rgb(38, 194, 194);
+    text-transform: capitalize;
+}
 .slide{
     display: none;
     animation: fade 1.5s;
@@ -118,18 +183,18 @@ body{
     from {opacity: .4;}
     to {opacity: 1;}
 }
-.slider-container::after{
+/* .slider-container::after{
     position: relative;
     content: "";
     height: 60%;
     width: 100%;
     background: linear-gradient(to top ,rgb(66, 66, 83),rgba(66, 66, 83,0.9),transparent);
     top: 13.4rem;
-}
+} */
 
 
 
-.slider-container section img{
+.slide section img{
     width: 100%;
 }
 
