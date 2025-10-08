@@ -33,3 +33,6 @@ setInterval(() => {
 
 // initialize first slide
 showSlide(slideIndex);
+
+const viewportWidth = window.innerWidth;
+console.log("Viewport Width:", viewportWidth, "pixels");

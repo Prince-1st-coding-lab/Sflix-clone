@@ -151,7 +151,7 @@ body{
     position: relative;
     left: 17rem;
     top: -5rem;
-    width: 35rem;
+    width: 33rem;
     font-size: 1.6vh;
     color: rgb(216, 199, 199);
     text-transform: capitalize;
@@ -226,6 +226,7 @@ body{
     text-transform: capitalize;
     color: whitesmoke;
     font-weight: bold;
+    width: fit-content;
 }
 .ft-movie h2{
     position: relative;
@@ -234,6 +235,7 @@ body{
     top: -1rem;
     text-transform: capitalize;
     color: rgb(38, 194, 194);
+    width: fit-content;
 }
 .ft-movie h3{
     position: relative;
@@ -275,16 +277,53 @@ body{
     border: solid 2px rgb(105, 105, 126);
     width: 20%;
     height: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
 }
 
+.share p{
+    color: rgb(216, 199, 199);
+    font-size: 2vh;
+}
+.social-media{
+    position: relative;
+    top: 2rem;
+    height: fit-content;
+    width: 95%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.social-media a{
+    color: white;
+    font-size: 3vh;
+}
+.social-media a:hover{
+    color: rgb(38, 194, 194);
+}
 /* trending movies */
 .trending-container{
     position: relative;
-    width: 100%;.slider-container section{
-        width: 100%;
-    }
+    width: 100%;
     height: 50rem;
     background-color: brown;
+}
+.trending-container .t-title{
+    position: relative;
+    color: white;
+    text-transform: capitalize;
+    border: solid 5px rgb(38, 194, 194);
+    width: fit-content;
+    left: .2rem;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    padding: .5vh;
+    padding-left:2vh;
 }
 /* latest cotainer */
 .latest-movies-container{

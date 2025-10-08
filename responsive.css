@@ -1,0 +1,9 @@
+@media screen and (min-width: 1366px) {
+ .header button{
+    width: 7%;
+    left: -2rem;
+ }
+ .ft-movie{
+   left: 1rem;
+ }
+}
