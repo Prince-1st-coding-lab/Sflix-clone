@@ -4,7 +4,7 @@
     padding: 0;
 }
 body{
-    background-color: rgb(66, 66, 83);
+    background-color: rgb(65, 65, 77);
     font-family: Arial, Helvetica, sans-serif;
 }
 /* header section */
@@ -309,8 +309,7 @@ body{
 .trending-container{
     position: relative;
     width: 100%;
-    height: 50rem;
-    background-color: brown;
+    height: 79rem;
 }
 .trending-container .t-title{
     position: relative;
@@ -324,6 +323,100 @@ body{
     border-bottom: none;
     padding: .5vh;
     padding-left:2vh;
+}
+.trending-container span a{
+    position: relative;
+    /* left: 14rem;
+    top: -2rem; */
+    color: rgb(38, 194, 194);
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 2.5vh;
+    font-weight: bold;
+}
+.trending-container span{
+    position: relative;
+    left: 13rem;
+    top: -2rem;
+    display: flex;
+    width: fit-content;
+    gap: 2rem;
+}
+.trending-container span a:last-child{
+    color: white;
+}
+.trending-container span a i{
+    border-radius: 50%;
+    padding: .2vh; 
+    font-size: 2.5vh;  
+}
+.treding-movie{
+    position: relative;
+    width: 98%;
+    height: 90%;
+    left: 1rem;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    gap: 1rem;
+    overflow: hidden;
+
+}
+.movie-card{
+    position: relative;
+    width: 11.5rem;
+    height: 23rem;
+    background-color: rgb(49, 49, 56);
+}
+.movie-card img{
+    height: 15rem;
+    width: 100%;
+}
+.movie-card section{
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    left: 0;
+    top: .2%;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    left: .5rem;
+    top: .2rem;
+
+}
+.movie-card p{
+    color: white;
+    font-size: 1.8vh;
+}
+.movie-card #rating{
+    color: rgb(0, 255, 255);
+}
+.movie-card h1{
+    position: relative;
+    left: .5rem;
+    font-size: 1rem;
+    top: .5rem;
+    color: white;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-transform: capitalize;
+    
+}
+.movie-card button{
+    position: absolute;
+    top: 20.5rem;
+    font-size: 2vh;
+    text-transform: capitalize;
+    color: white;
+    background-color: rgb(105, 105, 126);
+    border: none;
+    width: 90%;
+    padding: .3rem;
+    left: .5rem;
+    cursor: pointer;
 }
 /* latest cotainer */
 .latest-movies-container{
