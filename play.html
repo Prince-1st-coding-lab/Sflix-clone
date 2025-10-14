@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 <body>
+        <div class="player"></div>
         <!-- header section -->
     <div class="header">
         <img src="assets/logo.png" alt="logo" width="60" height="40">
@@ -17,6 +18,7 @@
             <input type="search" name="search" id="search" placeholder="enter keywords">
         </div>
     </div>
+
 
     <div class="movie-details-container">
         <img src="assets/img1.jpg" alt="background image">
@@ -29,7 +31,18 @@
             <img src="assets/cp.jpg" alt="mini-image">
             <h1 class="m-title">The Fantastic Four: First Steps</h1>
             <section class="meta-data"><span id="resolution">HD</span><span><i class="fa-solid fa-video"></i> trailer</span> <span id="rating">IMDB:7.2</span><span id="duration">45min</span> </section>
+            <section class="overview"><span>overview :</span>
+            <span><p>Set against the backdrop of a ’60s-inspired, retro-futuristic world, Marvel’s First Family faces a daunting challenge. Forced to balance being heroes with their family bond, they must defend Earth from a space god and his enigmatic herald.</p></span>
+        </section>
+        <div class="buttons">
+            <button onclick="player()"><i class="fa-solid fa-video"></i> trailer</button>
+            <button onclick="player()"><i class="fa-solid fa-play"></i>watch now</button>
+            <button><i class="fa-solid fa-circle-down"></i>download</button>
+            <button><i class="fa-solid fa-closed-captioning"></i>subtitle</button>
+        </div>
         </div>
     </div>
+
+    <script src="play.js"></script>
 </body>
 </html>
