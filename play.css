@@ -72,8 +72,12 @@ body{
     width: 100%;
     height: 40rem;
     transform: translateY(-100%);
-    background: green;
     transition: all ease .5s;
+}
+.player iframe{
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 .movie-details-container{
     position: relative;
