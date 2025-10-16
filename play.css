@@ -370,4 +370,91 @@ body{
     font-size: 2vh;
     font-weight: bold;
 }
+.related{
+    position: relative;
+    width: 100%;
+    height: 80rem;
+    top: -22rem;
+}
+.related .t-title{
+    position: relative;
+    color: white;
+    text-transform: capitalize;
+    border: solid 5px rgb(38, 194, 194);
+    width: fit-content;
+    left: 1rem;
+    top: 1rem;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    padding: .5vh;
+    padding-left:2vh;
+}
+.related .movie-container{
+    position: relative;
+    width: 98%;
+    height: 90%;
+    left: 1rem;
+    top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    gap: .2rem;
+    overflow: hidden;
+}
+.movie-card{
+    position: relative;
+    width: 11.5rem;
+    height: 23rem;
+    background-color: rgb(49, 49, 56);
+}
+.movie-card img{
+    height: 15rem;
+    width: 100%;
+}
+.movie-card section{
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    left: 0;
+    top: .2%;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    left: .5rem;
+    top: .2rem;
 
+}
+.movie-card p{
+    color: white;
+    font-size: 1.8vh;
+}
+.movie-card #rating{
+    color: rgb(0, 255, 255);
+}
+.movie-card h1{
+    position: relative;
+    left: .5rem;
+    font-size: 1rem;
+    top: .5rem;
+    color: white;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-transform: capitalize;
+    
+}
+.movie-card button{
+    position: absolute;
+    top: 20.5rem;
+    font-size: 2vh;
+    text-transform: capitalize;
+    color: white;
+    background-color: rgb(105, 105, 126);
+    border: none;
+    width: 90%;
+    padding: .3rem;
+    left: .5rem;
+    cursor: pointer;
+}
