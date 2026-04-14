@@ -34,6 +34,9 @@ body{
     border-radius: 3px;
 
 }
+a{
+    text-decoration:"none";
+}
 .search{
     position: absolute;
     width: 50%;
